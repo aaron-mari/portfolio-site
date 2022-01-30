@@ -1,11 +1,11 @@
-import react from 'react'
+
 import profile from './img/profile.png'
 
 const About = () => {
     return (
         <div className="section about-container" id="about">
             <h1>About</h1>
-            <img src={profile} />
+            <img src={profile} alt="" />
             <p>My name is Aaron, and I like to work with code.</p>
             <p>I am a full-stack web developer that works with with a variety of technologies, mainly MERN (MongoDB, Express, React & Node.js).</p>
             <h3>Skills</h3>
