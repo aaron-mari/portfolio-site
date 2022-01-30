@@ -1,0 +1,168 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen+Mono&family=Staatliches&display=swap"
+$heading-font: Staatliches, sans-serif
+$primary-font: Montserrat, sans-serif
+$primary-color: rgb(0,0,0)
+$text-color: rgb(255,255,255)
+$font-size: 20px
+
+body
+    font-family: $primary-font
+    background-color: $primary-color
+    color: $text-color
+    margin: auto
+    font-size: $font-size
+
+h1, h2, h3, h4, h5, h6
+    font-family: $heading-font
+    color: $text-color
+h1
+    font-size: 6rem
+h2
+    font-size: 5rem
+h3
+    font-size: 3rem
+h4
+    font-size: 2rem
+h5
+    font-size: 1rem
+
+a
+    text-decoration: none
+    color: $text-color
+a:hover 
+    color: grey
+a:visited 
+    text-decoration: none
+    color: grey
+a.h4 
+    color:$text-color
+
+.hero
+    background-image: url("../../public/bg.jpg")
+    background-size: cover
+    font-size: 3rem
+    text-align: center
+    h1
+        animation-name: fadein
+        animation-duration: 2s
+    width: 100%
+        
+
+.introduction
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+
+.card
+    font-family: Oxygen Mono, monospace
+    padding: 10px
+    max-width: 250px
+    h1, h2, h3, h4, h5, h6
+        display: none
+        
+    img
+        max-width: 250px
+
+    p
+        font-size: 1rem
+        margin: 0
+        padding: 0
+        text-overflow: ellipsis
+    
+    
+
+    
+
+.card:hover
+    h1, h2, h3, h4, h5, h6
+        display: block
+        position: absolute
+        padding: 0
+        margin: 0
+        font-family: Montserrat, sans-serif
+        font-size: 1.5em
+        transform: translateY(-2.7em)
+        //background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0, 0.5),rgba(255,255,255, 0), rgba(255,255,255, 0))
+        background-color: rgba(30, 30, 30, 0.5)
+        padding-left: 3px
+        
+        width: 250px
+        text-align: center
+
+    
+
+    
+
+.section
+    font-family: Oxygen Mono, monospace
+    padding: 2vh
+
+.about-container
+    text-align: center
+    h1
+        text-align: left
+    img
+        outline: 5px solid white
+
+.skills-container
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin: 0
+    
+
+.skill-list
+    margin-right: 5vw
+    
+        
+
+.projects-container
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+    align-items: start
+    
+
+    
+
+.header-container
+    position: sticky
+    top: 0
+    
+    a
+        color: white
+        text-decoration: none
+    background-color: rgba(0,75,0,1)
+    display: flex
+    align-items: center
+    justify-content: start
+    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.5), 0 6px 8px 0 rgba(0,0,0, 0.19)
+.menu
+    width: 100%
+    padding: 3vh
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+.contact-container
+    display: flex
+    flex-direction: row
+    justify-content: center
+    .contact-item
+        text-align: center
+        padding: 10px
+    
+    
+.footer
+    text-align: center
+
+@keyframes fadein
+    from
+        color: rgba(255,255,255, 0)
+        transform: translatey(10vh)
+    to 
+        color: rgba(255,255,255,1)
+        transform: translateX(0vh)
