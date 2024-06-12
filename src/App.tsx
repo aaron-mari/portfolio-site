@@ -1,24 +1,22 @@
-import React from 'react';
-
-import Header from './components/Header'
+import { useState } from 'react'
+import Header from './components/About'
 import Footer from './components/Footer'
-import Intro from './components/Intro'
 import About from './components/About'
+import Intro from './components/Intro'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
+import './sass/style.sass'
 
 function App() {
+  
+
   return (
-    <div>
-      <Header/>
-      <Intro/>
-      <About/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-    </div>
-    
-  );
+    <>
+    <Intro />
+    <About />
+    <Projects />
+    <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
