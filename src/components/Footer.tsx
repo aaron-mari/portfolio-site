@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 
@@ -6,7 +5,7 @@ const Footer = () => {
     const curYear = useState(new Date(Date.now()).getFullYear())
     return (
         <div className="footer">
-            <p>&copy;{curYear} Aaron M.</p>
+            <p>&copy;{curYear[0]} Aaron M.</p>
         </div>
     )
 }

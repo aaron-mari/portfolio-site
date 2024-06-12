@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import Header from './components/About'
+import Header from './components/Header'
 import Footer from './components/Footer'
 import About from './components/About'
 import Intro from './components/Intro'
@@ -11,6 +10,7 @@ function App() {
 
   return (
     <>
+    <Header />
     <Intro />
     <About />
     <Projects />

@@ -1,4 +1,3 @@
-import React from 'react'
 import Project from './Project'
 import countdown from './img/countdown.png'
 import flashapp from './img/flashapp.png'
